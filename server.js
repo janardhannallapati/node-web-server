@@ -8,7 +8,7 @@ app.get('/',function(req,res){
     	res.send("Hello express!");
 });
 app.get('/about',middleware.requireAuthentication,function(req,res){
-  res.send('This is about us');
+  res.send('This is about us!');
 });
 app.use(express.static(__dirname+'/public'));
 app.listen(PORT,function(){
